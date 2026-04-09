@@ -1,0 +1,9 @@
+services:
+  ytm-jam-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ytm-jam-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
